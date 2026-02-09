@@ -1,0 +1,70 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px ;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+body { margin: 0; background-color: #f4f4f4; }
+
+nav ul li a:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+
+/*Reducción del tamaño del logotipo en el encabezado*/
+header img {
+    width: 100px;
+    height: auto;
+}
+
+
+
+/*Responsividad para Móvil*/
+@media (max-width: 600px) { 
+    .contenedor-contacto { flex-direction: column; }
+    nav ul li { display: block; margin: 10px 0; }
+}
+

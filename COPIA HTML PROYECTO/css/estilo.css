@@ -1,0 +1,134 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+/* Galería de logros */
+.galeria {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.galeria img {
+    text-align: center;
+}
+
+/* Productos */
+.productos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.producto {
+    text-align: center;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.producto button {
+    margin-top: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Pie de página */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Aplicar Google Fonts [2, 3] */
+* { font-family: 'Roboto', sans-serif; }
+
+body { margin: 0; background-color: #f4f4f4; }
+
+/* Navegación con efecto Hover [3, 4] */
+nav ul li a:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+/* Diseño en columnas para Formulario y Mapa [10, 11] */
+.contenedor-contacto {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.columna { flex: 1; }
+
+/* Galería con Efecto Hover [4] */
+.galeria .fotos img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* Reducción del tamaño del logotipo en el encabezado [3] */
+header img {
+    width: 100px; /* Tamaño reducido para el logo */
+    height: auto;
+}
+
+/* Reducción del tamaño de las imágenes de los productos [4] */
+.producto img {
+    width: 150px; /* Tamaño controlado para el catálogo */
+    height: auto;
+    border-radius: 5px; /* Mejora visual opcional */
+}
+
+
+/* Responsividad para 3 tamaños (Móvil, Tablet, Escritorio) [4, 7] */
+@media (max-width: 600px) { /* Móvil */
+    .contenedor-contacto { flex-direction: column; }
+    nav ul li { display: block; margin: 10px 0; }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) { /* Tablet */
+    .galeria { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1025px) { /* Escritorio */
+    .galeria { display: flex; flex-wrap: wrap; }
+}
