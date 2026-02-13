@@ -1,27 +1,29 @@
 *{
     font-family: 'Times New Roman', Times, serif;
 }
-
+/*Configuración general para todas las páginas*/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
 }
 
 header {
     background-color: #000;
     color: #fff;
-    padding: 20px ;
+    padding: 20px 0;
     text-align: center;
 }
 
 nav ul {
     list-style: none;
+    padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin:  10px;
 }
 
 nav ul li a {
@@ -38,7 +40,7 @@ section {
     border-radius: 8px;
 }
 
-
+/*Pie de página*/
 footer {
     background-color: #000;
     color: #fff;
@@ -48,23 +50,31 @@ footer {
 
 body { margin: 0; background-color: #f4f4f4; }
 
+/* Navegador con efecto Hover*/
 nav ul li a:hover {
     color: #ffd700;
     text-decoration: underline;
 }
 
-
-/*Reducción del tamaño del logotipo en el encabezado*/
-header img {
-    width: 100px;
-    height: auto;
+/*Diseño columnas para Contacto*/
+.contenedor-contacto {
+    display: flex;
+    padding: 20px;
 }
 
 
+/*Reducción tamaño logotipo*/
+header img {
+    width: 100px; 
+    height: auto;
+}
 
-/*Responsividad para Móvil*/
-@media (max-width: 600px) { 
+/*Media para móvil y escritorio*/
+@media (max-width: 600px) { /**/
     .contenedor-contacto { flex-direction: column; }
     nav ul li { display: block; margin: 10px 0; }
 }
 
+@media (min-width: 1025px) { /**/
+    .galeria { display: flex; flex-wrap: wrap; }
+}
