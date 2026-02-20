@@ -1,7 +1,7 @@
 *{
     font-family: 'Times New Roman', Times, serif;
 }
-/*Configuración general para todas las páginas*/
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -22,7 +22,7 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block;
+    display: inline;
     margin: 0 10px;
 }
 
@@ -40,6 +40,26 @@ section {
     border-radius: 8px;
 }
 
+/*Productos*/
+.productos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.producto {
+    text-align: center;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.producto button {
+    margin-top: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
 /*Pie de página*/
 footer {
     background-color: #000;
@@ -48,35 +68,39 @@ footer {
     padding: 10px;
 }
 
-
-/*Google Fonts*/
+/*Aplicar Google Fonts*/
 * { font-family: 'Roboto', sans-serif; }
 
 body { margin: 0; background-color: #f4f4f4; }
 
-/*Navegador con efecto Hover*/
+/*Navegación con efecto Hover*/
 nav ul li a:hover {
-    color: #74a0c9;
+    color: #ffd700;
     text-decoration: underline;
 }
 
-/*Diseño columnas para Contacto*/
+/*Diseño en columnas para Formulario y Mapa*/
 .contenedor-contacto {
     display: flex;
     gap: 20px;
     padding: 20px;
 }
 
-.columna { flex: 1; }
-
-/*Reducción logotipo*/
+/*Reducción del tamaño del logotipo en el encabezado*/
 header img {
-    width: 100px;
+    width: 100px; 
     height: auto;
 }
 
-/*Responsividad para Móvil y Escritorio*/
-@media (max-width: 600px) { /*movil*/
+/*Reducción del tamaño de las imágenes de los productos*/
+.producto img {
+    width: 150px; /* Tamaño controlado para el catálogo*/
+    height: auto;
+    border-radius: 5px; 
+}
+
+/*Responsividad para 2 tamaños (telefono y pc)*/
+@media (max-width: 600px) { /*telefono*/
     .contenedor-contacto { flex-direction: column; }
     nav ul li { display: block; margin: 10px 0; }
 }
