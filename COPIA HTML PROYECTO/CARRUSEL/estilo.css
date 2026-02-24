@@ -2,15 +2,13 @@
  html {
      padding: 0;
      margin: 0;
-     width: 100vw;
-     /*ancho de la ventana del navegador*/
-     height: 100vh;
-     /*alto de la aventna del navegador*/
+     width: 100vw;/*ancho de la ventana del navegador*/
+     height: 100vh;/*alto de la aventna del navegador*/
      overflow: hidden;
      /*oculta cualquier contenido que se desborde o sobresalga de los límites (alto o ancho) de su contenedor padre.*/
  }
-
-
+ 
+ 
  /*ELIMINA TODOS LOS ESTILOS DE LAS LISTAS DEL DOCUMENTO*/
  ul,
  li {
@@ -23,10 +21,9 @@
  /*CONTENEDOR DE DIAPOSITIVAS*/
  ul.slider {
      position: relative;
-          
  }
 
- /*La primera diapositiva siempre va a estar visible*/
+  /*La primera diapositiva siempre va a estar visible*/
  ul.slider li:first-child {
      opacity: 1;
  }
@@ -44,17 +41,15 @@
 
 
  /*  A partir de aquí el CSS es puro diseño visual para hacer una versión más vistosa.*/
-
+ 
 
  ul.slider {
      padding: 30px;
  }
 
  ul.slider li {
-     width: 100vw;
-     /*ocupa el ancho del navegador*/
-     height: 100vh;
-     /*ocupa el alto del navegador*/
+     width: 100vw;/*ocupa el ancho del navegador*/
+     height: 100vh;/*ocupa el alto del navegador*/
      position: absolute;
      /*Para que todas las diapositivas ocupen el mismo sitio*/
      left: 0px;
@@ -62,13 +57,11 @@
      margin: 0;
      padding: 0;
      border: 0;
-     opacity: 0;
-     /*por defecto todas las diapositivas están ocultas*/
+     opacity: 0;/*por defecto todas las diapositivas están ocultas*/
      transition: opacity .5s;
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
      font-weight: bold;
-     font-size: calc(1.5rem + 1vw);
-     /*para que el texto aumente con el tamaño de la ventana*/
+    font-size: calc(1.5rem + 1vw);/*para que el texto aumente con el tamaño de la ventana*/
      text-align: center;
  }
 
@@ -82,12 +75,11 @@
  }
 
  .slider li p {
-     position: absolute;
-     /*para mostrar el texto en la diapositiva*/
+     position: absolute;/*para mostrar el texto en la diapositiva*/
      height: 60px;
      width: 70%;
      left: 50px;
-     top: 50px;
+     top: 50px;     
      color: white;
  }
 
@@ -129,8 +121,7 @@
      position: relative;
  }
 
- nav li:last-child a {
-     /*Al último elemento del menú de dipapositivas le quita el borde derecho*/
+ nav li:last-child a {/*Al último elemento del menú de dipapositivas le quita el borde derecho*/
      border-right: 0;
  }
 
@@ -145,15 +136,3 @@
      background: #f90;
      color: #00324b;
  }
-
-.slider img {
-    width: 85%;
-    height: 80%;
-    object-fit: cover;
-}
-
-nav img {
-    width: 250px;   /* antes 80px */
-    height: 200px;
-    object-fit: cover;
-}
