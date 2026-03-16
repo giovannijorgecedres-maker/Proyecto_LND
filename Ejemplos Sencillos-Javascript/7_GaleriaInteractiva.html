@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--Galería de imágenes interactiva
+
+Descripción: Crea una galería donde las imágenes cambien al hacer clic en miniaturas.
+Pista: Usa eventos como onclick y actualiza el atributo src de una etiqueta <img>.-->
+    <head>
+
+    </head>
+    <body>
+        
+        <img id="mainImage" src="imagenes/img1.jpg" alt="Imagen principal" width="300">
+    <br>
+    <img src="imagenes/img1.jpg" alt="Miniatura" width="100" onclick="changeImage('imagenes/img1.jpg')">
+    <img src="imagenes/img2.jpg" alt="Miniatura" width="100" onclick="changeImage('imagenes/img2.jpg')">
+    <img src="imagenes/img3.jpg" alt="Miniatura" width="100" onclick="changeImage('imagenes/img3.jpg')">
+
+    <script>
+        function changeImage(image) {
+            document.getElementById("mainImage").src = image;
+        }
+    </script>
+    </body>
+</html>
+    

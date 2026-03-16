@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--Contador interactivo-->
+    <head>
+
+    </head>
+    <body>
+         <p id="contador">0</p>
+         <button onclick="incrementar()">Incrementar</button>
+         <button onclick="decrementar()">Decrementar</button>
+
+         <script >
+            let cont=0;
+            function incrementar(){
+                    cont++;
+                    document.getElementById("contador").innerText=cont;
+                
+            }
+            function decrementar(){
+                cont--;
+                document.getElementById("contador").innerText=cont;
+            }
+         </script>
+    </body>
+</html>
+    

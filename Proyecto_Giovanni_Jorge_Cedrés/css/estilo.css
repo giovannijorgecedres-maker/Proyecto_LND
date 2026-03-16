@@ -40,6 +40,13 @@ section {
     border-radius: 8px;
 }
 
+/*Scripts*/
+#cambiar {
+    display: block;
+    text-align: center;
+}
+
+
 /*Productos*/
 .productos {
     display: flex;
@@ -68,6 +75,8 @@ footer {
     padding: 10px;  
 
 }
+
+
 
 /*Aplicar Google Fonts*/
 * { font-family: 'Roboto', sans-serif; }

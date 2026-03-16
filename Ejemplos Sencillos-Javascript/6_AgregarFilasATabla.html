@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--Cambiar el contenido de una tabla 
+Descripción: Llena dinámicamente una tabla con datos ingresados por el usuario.-->
+    <head>
+
+    </head>
+    <body>
+        <table id="tabla">
+            <tr>
+                <td>Nombre</td>
+                <td>Edad</td>
+            </tr>
+
+        </table>
+
+         <input id="nombre" type="text" placeholder="Nombre">
+         <input id="edad" type="number"  placeholder="Edad">
+
+
+         <button onclick="agregar()">Agregar a tabla</button>
+        
+
+         <script >
+            
+            function agregar(){
+                   
+                    const fila=document.getElementById("tabla").insertRow();
+                    const celda1=fila.insertCell(0);
+                    const celda2=fila.insertCell(1);
+                    celda1.innerText=document.getElementById("nombre").value;
+                    celda2.innerText=document.getElementById("edad").value;
+                    document.getElementById("nombre").value="";
+                    document.getElementById("edad").value="";
+
+
+            }
+           
+         </script>
+    </body>
+</html>
+    
