@@ -1,7 +1,7 @@
 *{
     font-family: 'Times New Roman', Times, serif;
 }
-
+/*Zona general*/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -163,9 +163,7 @@ header img {
  }
 
 
- /*  A partir de aquí el CSS es puro diseño visual para hacer una versión más vistosa.*/
-
-
+/*Zona de Carrusel*/
    .huevos ul.slider {
      padding: 30px;
  }
