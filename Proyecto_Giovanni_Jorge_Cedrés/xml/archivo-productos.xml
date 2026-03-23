@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>Cristiano Ronaldo Fan Page</title>
+  <link>http://127.0.0.1:5500/Proyecto_Giovanni_Jorge_Cedr%C3%A9s/inicial.html</link>
+  <description>Página de Fan</description>
+  
+  <image>
+    <url>http://127.0.0.1:5500/Proyecto_Giovanni_Jorge_Cedr%C3%A9s/img/logo.png</url>
+    <title>Logo de la página de FANS</title>
+    <link>https://www.w3schools.com</link>
+  </image>
+  
+  <item>
+    <title>Producto añadido</title>
+    <link>http://127.0.0.1:5500/Proyecto_Giovanni_Jorge_Cedr%C3%A9s/productos.html</link>
+    <description>Aquí en esta sección vemos que hay un producto añadido para comprar, que en este caso es la colonia roja con un sabor fuerte y tanto intenso como adictivo.</description>
+  </item>
+
+  <item>
+    <title>Producto añadido Limitado!!!!</title>
+    <link>http://127.0.0.1:5500/Proyecto_Giovanni_Jorge_Cedr%C3%A9s/productos.html</link>
+    <description>Nuevo producto añadido de edición limitada.</description>
+  </item>
+
+
+
+</channel>
+
+</rss>

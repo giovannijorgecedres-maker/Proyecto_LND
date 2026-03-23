@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/estilo.css">
 </head>
+
 <body>
     <header>
         <img src="img/logo.png" alt="Logotipo CR7" class="logo">
@@ -37,7 +39,7 @@
                     <p>Balón de Oro Réplica</p>
                     <button onclick="añadirAlCarrito('Balon')">Añadir al carrito</button>
                 </div>
-                 <div class="producto">
+                <div class="producto">
                     <img src="img/ur,throw_pillow_couch_small,square,600x600.jpg" alt="Balón CR7">
                     <p>Almohada de Cr7</p>
                     <button onclick="añadirAlCarrito('Almohada')">Añadir al carrito</button>
@@ -47,6 +49,18 @@
                     <p>Calzoncillos de Cr7</p>
                     <button onclick="añadirAlCarrito('Calzones')">Añadir al carrito</button>
                 </div>
+                <div class="producto">
+                    <img src="img/colonia1.jpg" alt="Colonia nueva!!">
+                    <p>Colonia</p>
+                    <button onclick="añadirAlCarrito('Colonia')">Añadir al carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="img/colonia2.jpg" alt="Colonia de última hora limitada">
+                    <p>Colonia Edición Limitada</p>
+                    <button onclick="añadirAlCarrito('Colonia Edición limitada')">Añadir al carrito</button>
+                </div>
+
             </div>
             <h3>Tu Carrito</h3>
             <ul id="carrito"></ul>
@@ -57,7 +71,7 @@
         <p>© 2025 Fan Page de Cristiano Ronaldo</p>
     </footer>
 
-    
+
     <script>
         function añadirAlCarrito(producto) {
             const lista = document.getElementById('carrito');
@@ -67,5 +81,8 @@
         }
     </script>
 
+    <link rel="stylesheet" href="xml/archivo-productos.xml">
+
 </body>
+
 </html>
